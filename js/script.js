@@ -18,10 +18,16 @@ const metaBtn=document.getElementById('meta-btn')
 const taskFive=document.getElementById('task-5').innerText
 const googleBtn=document.getElementById('google-btn')
 // const taskSix=document.getElementById('task-6').innerText
+const taskSix=document.getElementById('task-six').innerText
 const glassDoarBtn=document.getElementById('improve-btn')
+const deleteBtn=document.getElementById('delete-btn')
+
 //
 
-
+const moreBtn=document.getElementById('moreBtn')
+moreBtn.addEventListener('click',function(){
+  window.location.href='./discover.html'
+})
 
 
 
@@ -45,6 +51,10 @@ shopEaseBtn.addEventListener("click", function () {
    
     `;
   activitySection.appendChild(div);
+  deleteBtn.addEventListener('click',function(){
+    activitySection.removeChild(div)
+    
+  })
 });
 //
 
@@ -66,6 +76,10 @@ CloudSyncBtn.addEventListener("click", function () {
      
       `;
   activitySection.appendChild(div);
+  deleteBtn.addEventListener('click',function(){
+    activitySection.removeChild(div)
+    
+  })
 });
 //
 swiftPayBtn.addEventListener("click", function () {
@@ -84,6 +98,10 @@ swiftPayBtn.addEventListener("click", function () {
      
       `;
   activitySection.appendChild(div);
+  deleteBtn.addEventListener('click',function(){
+    activitySection.removeChild(div)
+    
+  })
 });
 //
  metaBtn.addEventListener('click',function(){
@@ -102,6 +120,10 @@ swiftPayBtn.addEventListener("click", function () {
        
         `;
     activitySection.appendChild(div);
+    deleteBtn.addEventListener('click',function(){
+      activitySection.removeChild(div)
+      
+    })
  })
  //
  googleBtn.addEventListener('click',function(){
@@ -120,9 +142,32 @@ swiftPayBtn.addEventListener("click", function () {
        
         `;
     activitySection.appendChild(div);
+    deleteBtn.addEventListener('click',function(){
+      activitySection.removeChild(div)
+      
+    })
  })
 
  //
  glassDoarBtn.addEventListener('click',function(){
-
+  alert("Board Updated Successfully");
+  alert('Congrats!! you have completed all the current tasks.')
+  let sum = workDone(convertedWorkDoneCount);
+  let substraction = workPending(convertedWorkPendingCount);
+  document.getElementById("work-done-count").innerText = sum;
+  document.getElementById("work-pending-count").innerText = substraction;
+  document.getElementById("improve-btn").classList.add("disabled");
+  document.getElementById("improve-btn").style.opacity = "0.3";
+  const div = document.createElement("div");
+  div.innerHTML = `
+      <div class='bg-[#F4F7FF] p-2 rounded-md'>
+       <p class='  text-sm'>You have completed the task ${taskSix} at ${currentTime} </p>
+       </div>
+     
+      `;
+  activitySection.appendChild(div);
+  deleteBtn.addEventListener('click',function(){
+    activitySection.removeChild(div)
+    
+  })
  })
