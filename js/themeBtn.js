@@ -19,13 +19,11 @@ function changeBg() {
 }
 
 
-theme.addEventListener("click", function () {
-  body.style.backgroundColor = changeBg();
-  console.log(changeBg());
+// theme.addEventListener("click", function () {
+//   body.style.backgroundColor = changeBg();
+//   console.log(changeBg());
   
-});
+// });
 theme.addEventListener("click", function () {
   body.style.backgroundColor = changeBg();
 });
-
-document.g

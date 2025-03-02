@@ -26,6 +26,7 @@ const deleteBtn=document.getElementById('delete-btn')
 
 const moreBtn=document.getElementById('moreBtn')
 moreBtn.addEventListener('click',function(){
+  
   window.location.href='./discover.html'
 })
 
@@ -39,6 +40,9 @@ shopEaseBtn.addEventListener("click", function () {
   let sum = workDone(convertedWorkDoneCount);
   //   let substraction = convertedWorkPendingCount - 1;
   let substraction = workPending(convertedWorkPendingCount);
+  if(substraction < 1){
+    alert('Congrats!! you have completed all the current tasks.')
+  }
   document.getElementById("work-done-count").innerText = sum;
   document.getElementById("work-pending-count").innerText = substraction;
   document.getElementById("shop-ease-btn").style.opacity = "0.3";
@@ -64,6 +68,9 @@ CloudSyncBtn.addEventListener("click", function () {
   let sum = workDone(convertedWorkDoneCount);
 
   let substraction = workPending(convertedWorkPendingCount);
+  if(substraction < 1){
+    alert('Congrats!! you have completed all the current tasks.')
+  }
   document.getElementById("work-done-count").innerText = sum;
   document.getElementById("work-pending-count").innerText = substraction;
   document.getElementById("cloud-sync-btn").style.opacity = "0.3";
@@ -86,6 +93,9 @@ swiftPayBtn.addEventListener("click", function () {
   alert("Board Updated Successfully");
   let sum = workDone(convertedWorkDoneCount);
   let substraction = workPending(convertedWorkPendingCount);
+  if(substraction < 1){
+    alert('Congrats!! you have completed all the current tasks.')
+  }
   document.getElementById("work-done-count").innerText = sum;
   document.getElementById("work-pending-count").innerText = substraction;
   document.getElementById("swift-pay-btn").style.opacity = "0.3";
@@ -108,6 +118,9 @@ swiftPayBtn.addEventListener("click", function () {
     alert("Board Updated Successfully");
     let sum = workDone(convertedWorkDoneCount);
     let substraction = workPending(convertedWorkPendingCount);
+    if(substraction < 1){
+      alert('Congrats!! you have completed all the current tasks.')
+    }
     document.getElementById("work-done-count").innerText = sum;
     document.getElementById("work-pending-count").innerText = substraction;
     document.getElementById("meta-btn").style.opacity = "0.3";
@@ -130,6 +143,9 @@ swiftPayBtn.addEventListener("click", function () {
     alert("Board Updated Successfully");
     let sum = workDone(convertedWorkDoneCount);
     let substraction = workPending(convertedWorkPendingCount);
+    if(substraction < 1){
+      alert('Congrats!! you have completed all the current tasks.')
+    }
     document.getElementById("work-done-count").innerText = sum;
     document.getElementById("work-pending-count").innerText = substraction;
     document.getElementById("google-btn").style.opacity = "0.3";
@@ -151,9 +167,12 @@ swiftPayBtn.addEventListener("click", function () {
  //
  glassDoarBtn.addEventListener('click',function(){
   alert("Board Updated Successfully");
-  alert('Congrats!! you have completed all the current tasks.')
+  
   let sum = workDone(convertedWorkDoneCount);
   let substraction = workPending(convertedWorkPendingCount);
+  if(substraction < 1){
+    alert('Congrats!! you have completed all the current tasks.')
+  }
   document.getElementById("work-done-count").innerText = sum;
   document.getElementById("work-pending-count").innerText = substraction;
   document.getElementById("improve-btn").style.opacity = "0.3";
