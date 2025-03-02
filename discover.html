@@ -33,80 +33,62 @@
     </header>
     <main class="p-3">
       <h3 class="font-bold text-center text-lg">Blogs</h3>
-      <section class="w-[90%] rounded-md space-y-1 mx-auto">
-        <div class="flex flex-col gap-2">
-          <p class="p-3 bg-white rounded-md font-semibold">
+      <section class="w-[90%] rounded-md space-y-2 mx-auto">
+        <div class="flex flex-col ">
+          <p class="p-3 bg-white rounded-md font-semibold border-b border-dashed">
             Question-1: What are the different ways to select an element in the
             DOM?
           </p>
           <p class="p-3 bg-white rounded-md opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Nam, est. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum repellendus cumque est reiciendis minima ratione dolor saepe
-            accusamus, recusandae ipsum!
+            There are so many ways to select an element in the dom.
+            
+            These are getElementById , getElementByClassName ,querySelector ,querySelectorAll , getElementByTagName etc.
           </p>
         </div>
       </section>
       <section class="w-[90%] rounded-md space-y-1 mx-auto">
-        <div class="flex flex-col gap-2">
-          <p class="p-3 bg-white rounded-md font-semibold">
+        <div class="flex flex-col   mt-2 ">
+          <p class="p-3 bg-white rounded-md font-semibold border-b border-dashed">
             Question-2: What is the difference between innerHTML, innerText, and textContent ?
 
 
           </p>
           <p class="p-3 bg-white rounded-md opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Nam, est. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum repellendus cumque est reiciendis minima ratione dolor saepe
-            accusamus, recusandae ipsum!
+             Upon question- innerHTML gives all the html element inside selected id, innerText gives all the text inside selected id and textContent gives the text inside the tag but not returns tags.textContent returns hidden text also while innerText doesnot. 
           </p>
         </div>
       </section>
       <section class="w-[90%] rounded-md space-y-1 mx-auto">
-        <div class="flex flex-col gap-2">
-          <p class="p-3 bg-white rounded-md font-semibold">
+        <div class="flex flex-col  mt-2 ">
+          <p class="p-3 bg-white rounded-md font-semibold border-b border-dashed">
             Question-3: What is event delegation in the DOM?
 
 
           </p>
           <p class="p-3 bg-white rounded-md opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Nam, est. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum repellendus cumque est reiciendis minima ratione dolor saepe
-            accusamus, recusandae ipsum!
+            When event occurs in child element it bubbles up to parent element. so based on this problem instead of targetting child elements we can add single event handler on parent .so bubbling will not occur.
           </p>
         </div>
       </section>
       <section class="w-[90%] rounded-md space-y-1 mx-auto">
-        <div class="flex flex-col gap-2">
-          <p class="p-3 bg-white rounded-md font-semibold">
+        <div class="flex flex-col mt-2 ">
+          <p class="p-3 bg-white rounded-md font-semibold border-b border-dashed">
             Question-4: What is event bubbling in the DOM?
 
 
           </p>
           <p class="p-3 bg-white rounded-md opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Nam, est. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum repellendus cumque est reiciendis minima ratione dolor saepe
-            accusamus, recusandae ipsum!
+            In Browser when we set an event on any element the browser start capturing where the targetted element is.  After capturing in the targetted phase capturing process jumps to targetted elements parent .If the parent also selected for targetting then through the child element and parent element bubbling occurs
           </p>
         </div>
       </section>
       <section class="w-[90%] rounded-md space-y-1 mx-auto">
-        <div class="flex flex-col gap-2">
-          <p class="p-3 bg-white rounded-md font-semibold">
+        <div class="flex flex-col mt-2 ">
+          <p class="p-3 bg-white rounded-md font-semibold border-b border-dashed">
             Question-5: How do you create, add, and remove elements using JavaScript?
           </p>
           <p class="p-3 bg-white rounded-md opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Nam, est. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum repellendus cumque est reiciendis minima ratione dolor saepe
-            accusamus, recusandae ipsum!
+           Using .create() method i will create elements. Using .appendChild() method i will add elements and finally using .removeChild() method i will remove elements from the selected section.
           </p>
         </div>
       </section>
